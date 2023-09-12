@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <div class="banner-container">
+    <img src="/images/icon.jpg" alt="Website Banner" class="website-banner">
+</div>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Optional scripts -->
+    {{#if scripts}}
+        {{#each scripts}}
+        <script src="{{this}}"></script>
+        {{/each}}
+    {{/if}}
+</head>
+
+<body>
+    <h1>
+    </h1>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/">主页</a></li>
+            <li><a href="/about">关于我们</a></li>
+            <li><a href="/contact">联系方式</a></li>
+            <li><a href="/career">工作</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content container -->
+    <main>
+        {{{body}}}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 营口新边地装饰工程有限公司. All rights reserved.</p>
+    </footer>
+
+    <!-- Additional Scripts at the end of the body -->
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: darkblue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url('/images/icon.jpg');
+    background-size: cover;  /* This will cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Center the image */
+}
+
+.banner-container {
+    width: 100%; /* Ensures the container takes up the full width */
+    overflow: hidden; /* Prevents potential overflows */
+}
+
+.website-banner {
+    display: block;  /* Removes any default alignments */
+    width: 100%;     /* Makes the image span the full width of its container */
+    max-height: 300px; 
+    margin: 0 auto;  /* Centers the image */
+    object-fit: cover;  /* This will ensure the image covers the space without getting squashed */
+    object-position: center; /* This will center the image */
+}
