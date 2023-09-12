@@ -78,3 +78,18 @@ body {
     object-fit: cover;  /* This will ensure the image covers the space without getting squashed */
     object-position: center; /* This will center the image */
 }
+
+.carousel-inner {
+    max-height: 500px; /* Set the maximum height as per your preference */
+    overflow: hidden;  /* To clip the overflow */
+}
+
+.carousel-inner img {
+    width: 100%;       /* Width is set to 100% to make the image responsive */
+    height: auto;      /* Height is set to auto to maintain the aspect ratio */
+}
+
+.carousel-inner img {
+    object-fit: cover;       /* Ensures images cover the area without being stretched */
+    object-position: center; /* Centers the image */
+}
