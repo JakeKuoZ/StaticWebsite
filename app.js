@@ -36,6 +36,12 @@ app.get('/contact', (req, res) => {
     });
 });
 
+app.post('/contact', (req , res) =>{
+    res.render('submit' ,{
+        title:"Success!"
+    })
+})
+
 app.get('/career', (req, res) => {
     res.render('career', {
         title:'Career'
